@@ -1,0 +1,45 @@
+create database faq; 
+
+use faq;
+
+// category
+CREATE TABLE category (
+category_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+category_name VARCHAR(50) NOT NULL)
+ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+
+// question
+CREATE TABLE question (
+question_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+category_id INT NOT NULL,
+title VARCHAR(200) NOT NULL,
+question VARCHAR(1000) NOT NULL,
+qdate DATETIME NOT NULL,
+drafter INT(11),
+resolved_date DATETIME,
+isdelete TINYINT(1) NOT NULL DEFAULT 0,
+status VARCHAR(1),
+priority VARCHAR(1) )
+ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+
+// comment
+CREATE TABLE comment (
+comment_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+question_id INT NOT NULL,
+comment VARCHAR(1000) NOT NULL,
+comment_date DATETIME NOT NULL,
+respondent INT(11),
+isdelete TINYINT(1) NOT NULL DEFAULT 0)
+ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+
+// user
+CREATE TABLE user (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+mail VARCHAR(200) NOT NULL,
+password VARCHAR(200) NOT NULL,
+isdelete TINYINT(1) NOT NULL DEFAULT 0,
+ins_date TIMESTAMP,
+upd_date TIMESTAMP)
+ENGINE=InnoDB DEFAULT CHARACTER SET=utf8;
+

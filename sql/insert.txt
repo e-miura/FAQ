@@ -1,0 +1,21 @@
+// category
+insert into category (category_name) values ('ƒJƒeƒSƒŠ‚P');
+insert into category (category_name) values ('ƒJƒeƒSƒŠ‚Q');
+insert into category (category_name) values ('ƒJƒeƒSƒŠ‚R');
+insert into category (category_name) values ('ƒJƒeƒSƒŠ‚S');
+insert into category (category_name) values ('ƒJƒeƒSƒŠ‚T');
+
+// user
+insert into user (name, mail, password) values ('USER1', 'user1@aaa', md5('user1') );
+insert into user (name, mail, password) values ('USER2', 'user2@aaa', md5('user2') );
+insert into user (name, mail, password) values ('USER3', 'user3@aaa', md5('user3') );
+insert into user (name, mail, password) values ('USER4', 'user4@aaa', md5('user4') );
+insert into user (name, mail, password) values ('USER5', 'user5@aaa', md5('user5') );
+insert into user (name, mail, password) values ('USER6', 'user6@aaa', md5('user6') );
+insert into user (name, mail, password) values ('USER7', 'user7@aaa', md5('user7') );
+insert into user (name, mail, password) values ('USER8', 'user8@aaa', md5('user8') );
+insert into user (name, mail, password) values ('USER9', 'user9@aaa', md5('user9') );
+insert into user (name, mail, password) values ('USER10', 'user10@aaa', md5('user10') );
+
+
+
