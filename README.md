@@ -1,7 +1,8 @@
 # FAQ
 
-sb-admin-2�𗘗p����FAQ�o�^�Ǘ����
-�E�J�e�S���[���ƂɎ���𕪗�
-�E����E�񓚓o�^�A�X�V�A�폜
-�E����ꗗ
+sb-admin-2を利用したFAQ登録管理画面
+
+- カテゴリーごとに質問を分類
+- 質問・回答登録、更新、削除
+- 質問一覧
 
